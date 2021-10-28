@@ -93,7 +93,7 @@ public class SearchTests{
         resultsPage.selectExtraFilters(5);
         //Verify that the properties displayed on the first page have at least the number of selected bedrooms
         String rooms = resultsPage.checkForFilter();
-        assertThat(rooms, containsString("5"));//beedrooms
+        assertThat(rooms, containsString("5 bedrooms."));//bedrooms
 
         //Open the details of the first property.
         String firstLink = resultsPage.getFirstLink();
